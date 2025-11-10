@@ -1,0 +1,19 @@
+# Archivo de variables de entorno - NO SUBIR AL REPOSITORIO
+.env
+
+# Logs
+*.log
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Vol?menes de Docker (si se crean localmente)
+# docker-volumes/

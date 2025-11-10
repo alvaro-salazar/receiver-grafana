@@ -1,0 +1,20 @@
+apiVersion: 1
+datasources:
+  - name: TimescaleDB
+    uid: timescaledb                # <── UID fijo
+    type: postgres
+    access: proxy
+    isDefault: true
+    url: timescaledb:5432
+    # NOTA IMPORTANTE: Grafana no soporta variables de entorno en archivos YAML de provisioning.
+    # Estos valores deben coincidir con las variables POSTGRES_USER, POSTGRES_PASSWORD y POSTGRES_DB
+    # definidas en tu archivo .env. Actualiza manualmente este archivo si cambias las credenciales.
+    user: iot_db_user
+    secureJsonData:
+      password: a1b2c3d4  # ⚠️ Debe coincidir con POSTGRES_PASSWORD del .env
+    jsonData:
+      database: iot_data_db  # ⚠️ Debe coincidir con POSTGRES_DB del .env
+      sslmode: "disable"
+      postgresVersion: 1400
+      timescaledb: true
+

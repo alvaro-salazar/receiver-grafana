@@ -1,0 +1,7 @@
+# Este directorio contiene:
+# - Imágenes y diagramas del proyecto (arquitectura-sistema.png)
+# - Imágenes Docker guardadas localmente (opcional)
+#
+# Para guardar la imagen Docker, ejecuta:
+# docker pull alvarosalazar/receiver-iot:latest
+# docker save alvarosalazar/receiver-iot:latest | gzip > images/receiver-iot-latest.tar.gz
