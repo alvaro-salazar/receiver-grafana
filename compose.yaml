@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
 
   receiver-iot-service:
-    image: 'alvarosalazar/receiver-iot-arm:latest'
+    image: 'alvarosalazar/receiver-iot:latest'
     container_name: receiver-iot-service
     ports:
       - '8085:8080'
